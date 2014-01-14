@@ -1,4 +1,4 @@
 ristinolla
 ==========
 
-Ohjelmoinnin harjoitustyö.
+Ohjelmoinnin harjoitustyö
