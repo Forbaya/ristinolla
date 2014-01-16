@@ -1,0 +1,8 @@
+Tuntikirjanpito:
+	Viikko 1
+		- Gitin asentaminen ja opetteleminen
+		- Projektin luominen. Mavenin, Pitin ja Coberturan konfiguroiminen.
+		- Aihekuvauksen tekeminen
+		Yht. ~3h
+		
+	

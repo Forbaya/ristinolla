@@ -1,0 +1,10 @@
+Aihe: Ristinolla
+Totetutetaan ristinolla, jota kaksi pelaajaa pelaa vastakkain. Peli sisältää graafisen käyttöliittymän.
+Suorituksen aikana pelatut pelit tallennetaan, kunnes ohjelma suljetaan. Lisää ominaisuuksia myöhemmin.
+
+Käyttäjät: Kaksi pelaajaa
+Käyttäjien toiminnot:
+	- Uuden pelin aloittaminen
+	- Pelin pelaaminen
+	- Tulosten katsominen
+	- Ohjelman sulkeminen
