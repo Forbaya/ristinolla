@@ -1,7 +1,7 @@
 package ristinolla.logiikka;
 
 /**
- * Ville Tanttu, opiskelijanumero 014245482
+ * Ville Tanttu
  * Ristinolla, Ohjelmoinnin harjoitustyö 2014
  */
 
@@ -42,9 +42,7 @@ public class Logiikka {
         }
     }
     
-    /*  Käynnistää uuden pelin nollaamalla ensin taulun, jonka jälkeen
-        arvotaan aloittaja. Lopuksi pelin tila vaihdetaan 1.
-    */
+    // Käynnistää uuden pelin nollaamalla ensin taulun, jonka jälkeen arvotaan aloittaja. Lopuksi pelin tila vaihdetaan 1.
     public void aloitaPeli() {
         this.nollaa();
         

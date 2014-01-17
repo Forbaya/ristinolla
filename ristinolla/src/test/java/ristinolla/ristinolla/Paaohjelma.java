@@ -1,7 +1,7 @@
 package ristinolla.ristinolla;
 
 /**
- * Ville Tanttu, opiskelijanumero 014245482
+ * Ville Tanttu
  * Ristinolla, Ohjelmoinnin harjoitustyö 2014
  */
 
