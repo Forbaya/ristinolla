@@ -9,6 +9,7 @@ public class Paaohjelma {
     public static void main(String[] args) {
         Logiikka logiikka = new Logiikka();
         logiikka.tulostaTaulu();
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 0);
         logiikka.suoritaVuoro(2, 1, 0);
         logiikka.suoritaVuoro(2, 2, 0);

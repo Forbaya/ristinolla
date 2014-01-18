@@ -46,6 +46,7 @@ public class LogiikkaTest {
     // Testaa täyden pöydän nollauksen.
     @Test
     public void nollaus() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 0);
         logiikka.suoritaVuoro(1, 0, 1);
         logiikka.suoritaVuoro(2, 0, 2);
@@ -71,6 +72,7 @@ public class LogiikkaTest {
      */
     @Test
     public void ylaRiviX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 0);
         logiikka.suoritaVuoro(1, 0, 1);
         logiikka.suoritaVuoro(1, 0, 2);
@@ -83,6 +85,7 @@ public class LogiikkaTest {
      */
     @Test
     public void ylaRiviO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 0);
         logiikka.suoritaVuoro(2, 0, 1);
         logiikka.suoritaVuoro(2, 0, 2);
@@ -95,6 +98,7 @@ public class LogiikkaTest {
      */
     @Test
     public void keskiRiviX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 1, 0);
         logiikka.suoritaVuoro(1, 1, 1);
         logiikka.suoritaVuoro(1, 1, 2);
@@ -107,6 +111,7 @@ public class LogiikkaTest {
      */
     @Test
     public void keskiRiviO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 1, 0);
         logiikka.suoritaVuoro(2, 1, 1);
         logiikka.suoritaVuoro(2, 1, 2);
@@ -119,6 +124,7 @@ public class LogiikkaTest {
      */
     @Test
     public void alaRiviX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 2, 0);
         logiikka.suoritaVuoro(1, 2, 1);
         logiikka.suoritaVuoro(1, 2, 2);
@@ -131,6 +137,7 @@ public class LogiikkaTest {
      */
     @Test
     public void alaRiviO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 2, 0);
         logiikka.suoritaVuoro(2, 2, 1);
         logiikka.suoritaVuoro(2, 2, 2);
@@ -143,6 +150,7 @@ public class LogiikkaTest {
      */
     @Test
     public void vasenSarakeX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 0);
         logiikka.suoritaVuoro(1, 1, 0);
         logiikka.suoritaVuoro(1, 2, 0);
@@ -155,6 +163,7 @@ public class LogiikkaTest {
      */
     @Test
     public void vasenSarakeO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 0);
         logiikka.suoritaVuoro(2, 1, 0);
         logiikka.suoritaVuoro(2, 2, 0);
@@ -167,6 +176,7 @@ public class LogiikkaTest {
      */
     @Test
     public void keskiSarakeX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 1);
         logiikka.suoritaVuoro(1, 1, 1);
         logiikka.suoritaVuoro(1, 2, 1);
@@ -179,6 +189,7 @@ public class LogiikkaTest {
      */
     @Test
     public void keskiSarakeO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 1);
         logiikka.suoritaVuoro(2, 1, 1);
         logiikka.suoritaVuoro(2, 2, 1);
@@ -191,6 +202,7 @@ public class LogiikkaTest {
      */
     @Test
     public void oikeaSarakeX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 2);
         logiikka.suoritaVuoro(1, 1, 2);
         logiikka.suoritaVuoro(1, 2, 2);
@@ -203,6 +215,7 @@ public class LogiikkaTest {
      */
     @Test
     public void oikeaSarakeO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 2);
         logiikka.suoritaVuoro(2, 1, 2);
         logiikka.suoritaVuoro(2, 2, 2);
@@ -215,6 +228,7 @@ public class LogiikkaTest {
      */
     @Test
     public void viistoVasemmaltaOikealleX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 0);
         logiikka.suoritaVuoro(1, 1, 1);
         logiikka.suoritaVuoro(1, 2, 2);
@@ -227,6 +241,7 @@ public class LogiikkaTest {
      */
     @Test
     public void viistoVasemmaltaOikealleO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 0);
         logiikka.suoritaVuoro(2, 1, 1);
         logiikka.suoritaVuoro(2, 2, 2);
@@ -239,6 +254,7 @@ public class LogiikkaTest {
      */
     @Test
     public void viistoOikealtaVasemmalleX() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(1, 0, 2);
         logiikka.suoritaVuoro(1, 1, 1);
         logiikka.suoritaVuoro(1, 2, 0);
@@ -251,6 +267,7 @@ public class LogiikkaTest {
      */
     @Test
     public void viistoOikealtaVasemmalleO() {
+        logiikka.aloitaPeli();
         logiikka.suoritaVuoro(2, 0, 2);
         logiikka.suoritaVuoro(2, 1, 1);
         logiikka.suoritaVuoro(2, 2, 0);

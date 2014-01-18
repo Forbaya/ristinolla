@@ -66,7 +66,7 @@ public class Logiikka {
     
     // Sijoittaa pöytään x tai o ja vaihtaa vuoroa.
     public void suoritaVuoro(int kuka, int rivi, int sarake) {
-        if (kuka == 1 || kuka == 2) {
+        if ((kuka == 1 || kuka == 2) && this.pelinTila == 1) {
             this.poyta[rivi][sarake] = kuka;
         }
         
