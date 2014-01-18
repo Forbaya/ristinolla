@@ -1,8 +1,17 @@
 Tuntikirjanpito:
-	Viikko 1
+	14.1.2014 - 16.1.2014
 		- Gitin asentaminen ja opetteleminen
 		- Projektin luominen. Mavenin, Pitin ja Coberturan konfiguroiminen.
 		- Aihekuvauksen tekeminen
 		Yht. ~3h
+		
+
+	17.1.2014
+		- Sovelluslogiikan lis‰‰minen
+		Yht. ~4.5h
+
+	18.1.2014
+		- 18 sovelluslogiikan testin tekeminen
+		Yht. ~1.5h
 		
 	
