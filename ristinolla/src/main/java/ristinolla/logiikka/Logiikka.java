@@ -1,9 +1,9 @@
-package ristinolla.logiikka;
-
 /**
  * Ville Tanttu
  * Ristinolla, Ohjelmoinnin harjoitustyö 2014
  */
+
+package ristinolla.logiikka;
 
 import java.util.Random;
 
