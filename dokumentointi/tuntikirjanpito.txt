@@ -14,4 +14,8 @@ Tuntikirjanpito:
 		- 18 sovelluslogiikan testin tekeminen
 		Yht. ~1.5h
 		
-	
+	20.1.2014
+		- käyttöliittymän aloittaminen
+		Yht. ~0.5h
+
+	Kokonaistunnit yht. ~9.5h
