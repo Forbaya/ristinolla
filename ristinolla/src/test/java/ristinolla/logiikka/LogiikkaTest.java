@@ -68,8 +68,7 @@ public class LogiikkaTest {
     
     /* Testaa xxx
      *        ...
-     *        ...
-     */
+     *        ... */
     @Test
     public void ylaRiviX() {
         logiikka.aloitaPeli();
@@ -81,8 +80,7 @@ public class LogiikkaTest {
     
     /* Testaa ooo
      *        ...
-     *        ...
-     */
+     *        ... */
     @Test
     public void ylaRiviO() {
         logiikka.aloitaPeli();
@@ -94,8 +92,7 @@ public class LogiikkaTest {
     
     /* Testaa ...
      *        xxx
-     *        ...
-     */
+     *        ... */
     @Test
     public void keskiRiviX() {
         logiikka.aloitaPeli();
@@ -107,8 +104,7 @@ public class LogiikkaTest {
     
     /* Testaa ...
      *        ooo
-     *        ...
-     */
+     *        ... */
     @Test
     public void keskiRiviO() {
         logiikka.aloitaPeli();
@@ -120,8 +116,7 @@ public class LogiikkaTest {
     
     /* Testaa ...
      *        ...
-     *        xxx
-     */
+     *        xxx */
     @Test
     public void alaRiviX() {
         logiikka.aloitaPeli();
@@ -133,8 +128,7 @@ public class LogiikkaTest {
     
     /* Testaa ...
      *        ...
-     *        ooo
-     */
+     *        ooo */
     @Test
     public void alaRiviO() {
         logiikka.aloitaPeli();
@@ -146,8 +140,7 @@ public class LogiikkaTest {
     
     /* Testaa x..
      *        x..
-     *        x..
-     */
+     *        x.. */
     @Test
     public void vasenSarakeX() {
         logiikka.aloitaPeli();
@@ -159,8 +152,7 @@ public class LogiikkaTest {
     
     /* Testaa o..
      *        o..
-     *        o..
-     */
+     *        o.. */
     @Test
     public void vasenSarakeO() {
         logiikka.aloitaPeli();
@@ -172,8 +164,7 @@ public class LogiikkaTest {
     
     /* Testaa .x.
      *        .x.
-     *        .x.
-     */
+     *        .x. */
     @Test
     public void keskiSarakeX() {
         logiikka.aloitaPeli();
@@ -185,8 +176,7 @@ public class LogiikkaTest {
     
     /* Testaa .o.
      *        .o.
-     *        .o.
-     */
+     *        .o. */
     @Test
     public void keskiSarakeO() {
         logiikka.aloitaPeli();
@@ -198,8 +188,7 @@ public class LogiikkaTest {
     
     /* Testaa ..x
      *        ..x
-     *        ..x
-     */
+     *        ..x */
     @Test
     public void oikeaSarakeX() {
         logiikka.aloitaPeli();
@@ -211,8 +200,7 @@ public class LogiikkaTest {
     
     /* Testaa ..o
      *        ..o
-     *        ..o
-     */
+     *        ..o */
     @Test
     public void oikeaSarakeO() {
         logiikka.aloitaPeli();
@@ -224,8 +212,7 @@ public class LogiikkaTest {
     
     /* Testaa x..
      *        .x.
-     *        ..x
-     */
+     *        ..x */
     @Test
     public void viistoVasemmaltaOikealleX() {
         logiikka.aloitaPeli();
@@ -237,8 +224,7 @@ public class LogiikkaTest {
     
     /* Testaa o..
      *        .o.
-     *        ..o
-     */
+     *        ..o */
     @Test
     public void viistoVasemmaltaOikealleO() {
         logiikka.aloitaPeli();
@@ -250,8 +236,7 @@ public class LogiikkaTest {
     
     /* Testaa ..x
      *        .x.
-     *        x..
-     */
+     *        x.. */
     @Test
     public void viistoOikealtaVasemmalleX() {
         logiikka.aloitaPeli();
@@ -263,8 +248,7 @@ public class LogiikkaTest {
     
     /* Testaa ..o
      *        .o.
-     *        o..
-     */
+     *        o.. */
     @Test
     public void viistoOikealtaVasemmalleO() {
         logiikka.aloitaPeli();
