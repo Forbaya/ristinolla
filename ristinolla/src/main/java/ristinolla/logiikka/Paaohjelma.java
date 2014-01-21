@@ -5,15 +5,12 @@
 
 package ristinolla.logiikka;
 
+import javax.swing.SwingUtilities;
+import ristinolla.kayttoliittyma.Kayttoliittyma;
+
 public class Paaohjelma {
     public static void main(String[] args) {
-        Logiikka logiikka = new Logiikka();
-        logiikka.tulostaTaulu();
-        logiikka.aloitaPeli();
-        logiikka.suoritaVuoro(2, 0, 0);
-        logiikka.suoritaVuoro(2, 1, 0);
-        logiikka.suoritaVuoro(2, 2, 0);
-        logiikka.tulostaTaulu();
-        System.out.println(logiikka.tarkistaVoitto(2));
+        Kayttoliittyma kayttoliittyma = new Kayttoliittyma();
+        SwingUtilities.invokeLater(kayttoliittyma);
     }
 }
