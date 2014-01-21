@@ -18,4 +18,9 @@ Tuntikirjanpito:
 		- käyttöliittymän aloittaminen
 		Yht. ~0.5h
 
+	21.1.2014
+		- piirtoalustan luominen
+		- käyttöliittymän päivittäminen
+		Yht. ~3.5h
+		
 	Kokonaistunnit yht. ~9.5h
