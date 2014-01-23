@@ -56,9 +56,6 @@
                 <targetClasses>
                     <param>ristinolla.logiikka*</param>
                 </targetClasses>
-                <targetTests>
-                    <param> </param>
-                </targetTests>
             </configuration>
         </plugin>
         
