@@ -92,8 +92,13 @@ public class Logiikka {
                     vierekkaiset++;
                 }
             }
+            if (vierekkaiset == 3) {
+                return true;
+            } else {
+                vierekkaiset = 0;
+            }
         }
-        return vierekkaiset == 3;
+        return false;
     }
     
     // Tarkistaa onko sarakkeissa kolme vierekkäistä samaa merkkiä.
@@ -106,8 +111,13 @@ public class Logiikka {
                     vierekkaiset++;
                 }
             }
+            if (vierekkaiset == 3) {
+                return true;
+            } else {
+                vierekkaiset = 0;
+            }
         }
-        return vierekkaiset == 3;
+        return false;
     }
     
     // Tarkistaa onko viistoissa kolme vierekkäistä samaa merkkiä.
@@ -137,7 +147,7 @@ public class Logiikka {
     }
     
     // Tulostaa pöydän. Tämä metodi on testaustarkoituksiin.
-    public void tulostaTaulu() {
+    public void tulostaPoyta() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(poyta[i][j] + " ");
