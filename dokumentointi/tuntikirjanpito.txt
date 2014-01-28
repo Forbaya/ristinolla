@@ -32,5 +32,5 @@ Tuntikirjanpito:
 		- 2 sovelluslogiikan testin lis‰‰minen
 		~6h
 		
-	Kokonaistunnit yht. ~15.5h
+	Kokonaistunnit yht. ~19h
 	
