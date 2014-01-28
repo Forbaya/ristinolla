@@ -43,6 +43,14 @@ public class LogiikkaTest {
         assertEquals(0, logiikka.getVuoro());
     }
     
+    // Testaa setPelinTila-metodin.
+    @Test
+    public void setPelinTila() {
+        assertEquals(0, logiikka.getPelinTila());
+        logiikka.setPelinTila(1);
+        assertEquals(1, logiikka.getPelinTila());
+    }
+    
     // Testaa täyden pöydän nollauksen.
     @Test
     public void nollaus() {
@@ -64,6 +72,23 @@ public class LogiikkaTest {
                 assertEquals(0, poyta[i][j]);
             }
         }
+    }
+    
+    // Testaa metodin onkoPoytaTaynna.
+    @Test
+    public void taynnaOlevaPoyta() {
+        logiikka.aloitaPeli();
+        logiikka.suoritaVuoro(1, 0, 0);
+        logiikka.suoritaVuoro(1, 0, 1);
+        logiikka.suoritaVuoro(2, 0, 2);
+        logiikka.suoritaVuoro(2, 1, 0);
+        logiikka.suoritaVuoro(1, 1, 1);
+        logiikka.suoritaVuoro(1, 1, 2);
+        logiikka.suoritaVuoro(1, 2, 0);
+        logiikka.suoritaVuoro(2, 2, 1);
+        logiikka.suoritaVuoro(2, 2, 2);
+        
+        assertTrue(logiikka.onkoPoytaTaynna());
     }
     
     /* Testaa xxx
@@ -256,5 +281,17 @@ public class LogiikkaTest {
         logiikka.suoritaVuoro(2, 1, 1);
         logiikka.suoritaVuoro(2, 2, 0);
         assertTrue(logiikka.tarkistaVoitto(2));
+    }
+    
+    /* Testaa ..x
+     *        .o.
+     *        o..*/
+    @Test
+    public void viistoFalse() {
+        logiikka.aloitaPeli();
+        logiikka.suoritaVuoro(1, 0, 2);
+        logiikka.suoritaVuoro(2, 1, 1);
+        logiikka.suoritaVuoro(2, 2, 0);
+        assertFalse(logiikka.tarkistaVoitto(2));
     }
 }
