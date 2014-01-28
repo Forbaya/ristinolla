@@ -3,24 +3,33 @@ Tuntikirjanpito:
 		- Gitin asentaminen ja opetteleminen
 		- Projektin luominen. Mavenin, Pitin ja Coberturan konfiguroiminen.
 		- Aihekuvauksen tekeminen
-		Yht. ~3h
+		~3h
 		
 
 	17.1.2014
 		- Sovelluslogiikan lisääminen
-		Yht. ~4.5h
+		~4.5h
 
 	18.1.2014
-		- 18 sovelluslogiikan testin tekeminen
-		Yht. ~1.5h
+		- 18 Sovelluslogiikan testin tekeminen
+		~1.5h
 		
 	20.1.2014
-		- käyttöliittymän aloittaminen
-		Yht. ~0.5h
+		- Käyttöliittymän aloittaminen
+		~0.5h
 
 	21.1.2014
-		- piirtoalustan luominen
-		- käyttöliittymän päivittäminen
-		Yht. ~3.5h
+		- Piirtoalustan luominen
+		- Käyttöliittymän päivittäminen
+		~3.5h
 		
-	Kokonaistunnit yht. ~9.5h
+	28.1.2014
+		- Käyttöliittymään suuri päivitys
+		- Piirtoalustaan suuri päivitys
+		- Kuuntelijat tehty Piirtoalustalle ja Uusi peli -napille.
+		- Sovelluslogiikan rikkinäiset tarkistaRivit- ja tarkistaSarakkeet-metodit korjattu
+		- Peli on tällä hetkellä pelattava
+		~5.5h
+		
+	Kokonaistunnit yht. ~15h
+	
