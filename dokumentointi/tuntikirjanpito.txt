@@ -29,7 +29,8 @@ Tuntikirjanpito:
 		- Kuuntelijat tehty Piirtoalustalle ja Uusi peli -napille.
 		- Sovelluslogiikan rikkin‰iset tarkistaRivit- ja tarkistaSarakkeet-metodit korjattu
 		- Peli on t‰ll‰ hetkell‰ pelattava
-		~5.5h
+		- 2 sovelluslogiikan testin lis‰‰minen
+		~6h
 		
-	Kokonaistunnit yht. ~15h
+	Kokonaistunnit yht. ~15.5h
 	
