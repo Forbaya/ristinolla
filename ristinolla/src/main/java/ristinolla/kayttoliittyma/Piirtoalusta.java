@@ -30,4 +30,18 @@ public class Piirtoalusta extends JPanel {
         g.drawLine(0, 300, 300, 300);
     }
     
+    // Piirtää X haluttuun koordinaattiin piirtoalustassa.
+    public void piirraRisti(int x, int y) {
+        Graphics graphics = this.getGraphics();
+        graphics.setColor(Color.BLUE);
+        graphics.drawLine(x, y, x + 50, y + 50);
+        graphics.drawLine(x + 50, y, x, y + 50);
+    }
+    
+    // Piirtää O haluttuun koordinaattiin piirtoalustassa.
+    public void piirraNolla(int x, int y) {
+        Graphics graphics = this.getGraphics();
+        graphics.setColor(Color.RED);
+        graphics.drawOval(x - 12, y - 12, 75, 75);
+    }
 }
