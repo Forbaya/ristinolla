@@ -41,7 +41,7 @@
             <configuration>
                 <instrumentation>
                     <includes>
-                        <include>ristinolla.logiikka/Logiikka.class</include>
+                        <include>ristinolla.logiikka/*.class</include>
                     </includes>
                 </instrumentation>
             </configuration>
@@ -54,11 +54,8 @@
             <version>0.30</version>
             <configuration>
                 <targetClasses>
-                    <param>ristinolla.ristinolla.logiikka*</param>
+                    <param>ristinolla.logiikka*</param>
                 </targetClasses>
-                <targetTests>
-                    <param> </param>
-                </targetTests>
             </configuration>
         </plugin>
         
