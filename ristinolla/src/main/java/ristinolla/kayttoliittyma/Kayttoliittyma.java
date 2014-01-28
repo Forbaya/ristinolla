@@ -30,29 +30,35 @@ public class Kayttoliittyma implements Runnable {
     public void run() {
         frame = new JFrame("Ristinolla");
         frame.setPreferredSize(new Dimension(620, 340));
+        frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         luoKomponentit(frame.getContentPane());
         frame.pack();
         frame.setVisible(true);
     }
     
-    // Luo komponentit jotka lisätään containeriin.
+    // Asettaa GridLayoutin. Luo piirtoalustan ja menun, jotka lisätään containeriin.
     public void luoKomponentit(Container container){
         container.setLayout(new GridLayout(1, 2));
         
+        JTextField tekstiKentta = new JTextField("Tervetuloa Ristinollaan!");
+        tekstiKentta.setEditable(false);
         Piirtoalusta piirtoalusta = new Piirtoalusta();
+        piirtoalusta.addMouseListener(new PiirtoalustaKuuntelija(this.logiikka, piirtoalusta, tekstiKentta));
+        
         container.add(piirtoalusta);
-        container.add(luoMenu());
+        container.add(luoMenu(tekstiKentta, piirtoalusta));
     }
     
-    public JPanel luoMenu() {
+    /*  Luo oikean puolen käyttöliittymästä. Menu sisältää tekstikentän, sekä napit uudelle pelille ja
+        pelin lopettamiselle. Tätä metodia kutsutaan luoKomponentit-metodissa. */
+    public JPanel luoMenu(JTextField tekstiKentta, Piirtoalusta piirtoalusta) {
         JPanel panel = new JPanel(new GridLayout(4, 1));
         
-        JTextField tekstiAlusta = new JTextField("Tervetuloa Ristinollaan!");
-        tekstiAlusta.setEditable(false);
         JButton uusiPeli = new JButton("Uusi peli");
-        JButton lopeta = new JButton("Lopeta");
+        uusiPeli.addActionListener(new UusiPeliKuuntelija(this.logiikka, tekstiKentta, piirtoalusta));
         
+        JButton lopeta = new JButton("Lopeta");
         // Luo ActionListenerin lopeta-napille.
         lopeta.addActionListener(new ActionListener() {
             @Override
@@ -61,7 +67,7 @@ public class Kayttoliittyma implements Runnable {
             }
         });
         
-        panel.add(tekstiAlusta);
+        panel.add(tekstiKentta);
         panel.add(uusiPeli);
         panel.add(lopeta);
         panel.add(new JLabel(""));
