@@ -146,7 +146,7 @@ public class Logiikka {
         return ristitJaNollat == 9;
     }
     
-    // Tulostaa pöydän. Tämä metodi on testaustarkoituksiin.
+    /* Tulostaa pöydän. Tämä metodi on testaustarkoituksiin.
     public void tulostaPoyta() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -156,4 +156,5 @@ public class Logiikka {
         }
         System.out.println("");
     }
+    */
 }
