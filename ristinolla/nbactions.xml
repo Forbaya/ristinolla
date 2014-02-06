@@ -7,6 +7,7 @@
             <goal>cobertura:cobertura</goal>
         </goals>
     </action>
+    
     <action>
         <actionName>CUSTOM-pit</actionName>
         <displayName>pit</displayName>
@@ -14,6 +15,7 @@
             <goal>org.pitest:pitest-maven:mutationCoverage</goal>
         </goals>
     </action>
+    
     <action>
             <actionName>run</actionName>
             <goals>
@@ -26,4 +28,12 @@
                 <exec.classpathScope>runtime</exec.classpathScope>
             </properties>
         </action>
+        
+    <action>
+        <actionName>CUSTOM-Javadoc</actionName>
+        <displayName>Javadoc</displayName>
+        <goals>
+            <goal>javadoc:javadoc</goal>
+        </goals>
+    </action>
 </actions>
