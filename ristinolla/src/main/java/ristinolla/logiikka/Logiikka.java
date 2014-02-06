@@ -12,6 +12,7 @@ public class Logiikka {
     private int pelinTila;  // Peli on käynnissä kun tila on 1, poissa kun tila on 0.
     private Random random;
     private int vuoro;      // x = 1, o = 2.
+    private VoittojenLaskija voittojenLaskija;
     
     public Logiikka() {
         this.poyta = new int[][] {
@@ -22,6 +23,7 @@ public class Logiikka {
         this.pelinTila = 0;
         this.random = new Random();
         this.vuoro = 0;
+        this.voittojenLaskija = new VoittojenLaskija();
     }
     
     public int getPelinTila() {
@@ -30,6 +32,10 @@ public class Logiikka {
     
     public int[][] getPoyta() {
         return this.poyta;
+    }
+    
+    public VoittojenLaskija getVoittojenLaskija() {
+        return this.voittojenLaskija;
     }
     
     public int getVuoro() {
@@ -79,7 +85,11 @@ public class Logiikka {
     
     // Tarkistaa onko toisella kolme vierekkäin. 
     public boolean tarkistaVoitto(int kuka) {
-        return this.tarkistaRivit(kuka) || this.tarkistaSarakkeet(kuka) || this.tarkistaViistot(kuka);
+        if (this.tarkistaRivit(kuka) || this.tarkistaSarakkeet(kuka) || this.tarkistaViistot(kuka)) {
+            voittojenLaskija.lisaaVoitto(kuka);
+            return true;
+        }
+        return false;
     }
     
     // Tarkistaa onko riveillä kolme vierekkäistä samaa merkkiä.
