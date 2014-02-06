@@ -12,7 +12,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
@@ -56,10 +55,11 @@ public class Kayttoliittyma implements Runnable {
         JPanel panel = new JPanel(new GridLayout(4, 1));
         
         JButton uusiPeli = new JButton("Uusi peli");
-        uusiPeli.addActionListener(new UusiPeliKuuntelija(this.logiikka, tekstiKentta, piirtoalusta));
-        
+        JButton tulokset = new JButton("Tulokset");
         JButton lopeta = new JButton("Lopeta");
-        // Luo ActionListenerin lopeta-napille.
+        
+        uusiPeli.addActionListener(new UusiPeliKuuntelija(this.logiikka, tekstiKentta, piirtoalusta));
+        tulokset.addActionListener(new TuloksetKuuntelija(this.logiikka));
         lopeta.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -69,8 +69,8 @@ public class Kayttoliittyma implements Runnable {
         
         panel.add(tekstiKentta);
         panel.add(uusiPeli);
+        panel.add(tulokset);
         panel.add(lopeta);
-        panel.add(new JLabel(""));
         
         return panel;
     }
