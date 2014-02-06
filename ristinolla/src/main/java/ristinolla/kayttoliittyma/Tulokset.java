@@ -35,6 +35,9 @@ public class Tulokset extends JFrame {
         return this.voittojenLaskija;
     }
     
+    /** Luo tulos-ikkunan komponentit ja lisää ne containeriin.
+     * @param container 
+     */
     public void luoKomponentit(Container container) {
         container.setLayout(new GridLayout(3, 1));
         

@@ -23,7 +23,9 @@ public class UusiPeliKuuntelija implements ActionListener {
         this.piirtoalusta = piirtoalusta;
     }
     
-    // Tyhjentää piirretyt ristit ja nollat, aloittaa logiikassa uuden pelin ja kertoo tekstikentässä kuka aloittaa.
+    /** Tyhjentää piirretyt ristit ja nollat, aloittaa logiikassa uuden pelin ja kertoo tekstikentässä kuka aloittaa.
+     * @param e 
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         this.graphics = piirtoalusta.getGraphics();

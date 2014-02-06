@@ -48,7 +48,8 @@ public class Logiikka {
         }
     }
     
-    // Käynnistää uuden pelin nollaamalla ensin taulun, jonka jälkeen arvotaan aloittaja. Lopuksi pelin tila vaihdetaan 1.
+    /** Käynnistää uuden pelin nollaamalla ensin taulun, jonka jälkeen arvotaan aloittaja. Lopuksi pelin tila vaihdetaan 1.
+     */
     public void aloitaPeli() {
         this.nollaa();
         
@@ -61,7 +62,8 @@ public class Logiikka {
         this.pelinTila = 1;
     }
     
-    // Nollaa taulun.
+    /** Nollaa taulun.
+     */
     public void nollaa() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -70,7 +72,11 @@ public class Logiikka {
         }
     }
     
-    // Sijoittaa pöytään x tai o ja vaihtaa vuoroa.
+    /** Sijoittaa pöytään x tai o ja vaihtaa vuoroa.
+     * @param kuka Risti tai nolla
+     * @param rivi Mille riville vuoro pelataan
+     * @param sarake Mille sarakkeelle vuoro pelataan
+     */
     public void suoritaVuoro(int kuka, int rivi, int sarake) {
         if ((kuka == 1 || kuka == 2) && this.pelinTila == 1) {
             this.poyta[rivi][sarake] = kuka;
@@ -83,7 +89,10 @@ public class Logiikka {
         }
     }
     
-    // Tarkistaa onko toisella kolme vierekkäin. 
+    /** Tarkistaa onko toisella kolme vierekkäin. 
+     * @param kuka Risti tai nolla
+     * @return Palauttaa true tai false
+     */
     public boolean tarkistaVoitto(int kuka) {
         if (this.tarkistaRivit(kuka) || this.tarkistaSarakkeet(kuka) || this.tarkistaViistot(kuka)) {
             voittojenLaskija.lisaaVoitto(kuka);
@@ -92,7 +101,10 @@ public class Logiikka {
         return false;
     }
     
-    // Tarkistaa onko riveillä kolme vierekkäistä samaa merkkiä.
+    /** Tarkistaa onko riveillä kolme vierekkäistä samaa merkkiä.
+     * @param kuka Risti tai nolla
+     * @return Palauttaa true tai false
+     */
     public boolean tarkistaRivit(int kuka) {
         int vierekkaiset = 0;
         
@@ -111,7 +123,10 @@ public class Logiikka {
         return false;
     }
     
-    // Tarkistaa onko sarakkeissa kolme vierekkäistä samaa merkkiä.
+    /** Tarkistaa onko sarakkeissa kolme vierekkäistä samaa merkkiä.
+     * @param kuka Risti tai nolla
+     * @return Palauttaa true tai false
+     */
     public boolean tarkistaSarakkeet(int kuka) {
         int vierekkaiset = 0;
         
@@ -130,7 +145,10 @@ public class Logiikka {
         return false;
     }
     
-    // Tarkistaa onko viistoissa kolme vierekkäistä samaa merkkiä.
+    /** Tarkistaa onko viistoissa kolme vierekkäistä samaa merkkiä.
+     * @param kuka Risti tai nolla
+     * @return Palauttaa true tai false
+     */
     public boolean tarkistaViistot(int kuka) {
         if (poyta[0][0] == kuka && poyta[1][1] == kuka && poyta[2][2] == kuka) {
             return true;
@@ -143,7 +161,9 @@ public class Logiikka {
         return false;
     }
     
-    // Tarkistaa montako ristiä ja nollaa pöydässä on. Palauttaa tosi jos pöytä on täysi.
+    /** Tarkistaa montako ristiä ja nollaa pöydässä on. Palauttaa tosi jos pöytä on täysi.
+     * @return Palauttaa true jos pöytä on täysi
+     */
     public boolean onkoPoytaTaynna() {
         int ristitJaNollat = 0;
         for (int i = 0; i < 3; i++) {

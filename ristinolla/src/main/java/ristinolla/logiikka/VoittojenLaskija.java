@@ -30,6 +30,9 @@ public class VoittojenLaskija {
         return this.voitot;
     }
     
+    /** Lisää voiton ristille tai nollalle
+     * @param kumpi Risti tai nolla 
+     */
     public void lisaaVoitto(int kumpi) {
         if (kumpi == 1) {
             this.voitot.add(1);

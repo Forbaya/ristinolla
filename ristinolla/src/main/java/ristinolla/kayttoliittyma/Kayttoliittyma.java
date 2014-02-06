@@ -36,7 +36,9 @@ public class Kayttoliittyma implements Runnable {
         frame.setVisible(true);
     }
     
-    // Asettaa GridLayoutin. Luo piirtoalustan ja menun, jotka lisätään containeriin.
+    /** Asettaa GridLayoutin. Luo piirtoalustan ja menun, jotka lisätään containeriin.
+     * @param container 
+     */
     public void luoKomponentit(Container container){
         container.setLayout(new GridLayout(1, 2));
         
@@ -49,8 +51,13 @@ public class Kayttoliittyma implements Runnable {
         container.add(luoMenu(tekstiKentta, piirtoalusta));
     }
     
-    /*  Luo oikean puolen käyttöliittymästä. Menu sisältää tekstikentän, sekä napit uudelle pelille ja
-        pelin lopettamiselle. Tätä metodia kutsutaan luoKomponentit-metodissa. */
+    /**  
+     * Luo oikean puolen käyttöliittymästä. Menu sisältää tekstikentän, sekä napit uudelle pelille ja
+     *   pelin lopettamiselle. Tätä metodia kutsutaan luoKomponentit-metodissa. 
+     * @param tekstiKentta Käyttöliittymän tekstikenttä
+     * @param piirtoalusta Piirtoalusta täytyy antaa uuden pelin kuuntelijalle
+     * @return Palauttaa panelin
+     */
     public JPanel luoMenu(JTextField tekstiKentta, Piirtoalusta piirtoalusta) {
         JPanel panel = new JPanel(new GridLayout(4, 1));
         

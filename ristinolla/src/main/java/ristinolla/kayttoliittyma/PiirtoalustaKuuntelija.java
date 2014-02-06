@@ -23,8 +23,10 @@ public class PiirtoalustaKuuntelija implements MouseListener {
         this.tekstiKentta = tekstiKentta;
     }
     
-    /*  Sekavannäköinen metodi, joka tarkistaa mihin kohtaan piirtoalustaa pelaaja klikkaa, ja suorittaa
-        sen mukaan vuoron tiettyyn ruutuun. */
+    /**  Sekavannäköinen metodi, joka tarkistaa mihin kohtaan piirtoalustaa pelaaja klikkaa,
+     *   ja suorittaasen mukaan vuoron tiettyyn ruutuun.
+     * @param e 
+     */
     @Override
     public void mouseClicked(MouseEvent e) {
         if (this.logiikka.getPelinTila() == 1) {
@@ -50,8 +52,13 @@ public class PiirtoalustaKuuntelija implements MouseListener {
         }
     }
     
-    /*  Suorittaa vuoron pelin logiikassa, jonka jälkeen piirtoalustaan piirretään joko risti tai nolla.
-        Lopuksi tarkistetaan loppuuko peli. */
+    /**  Suorittaa vuoron pelin logiikassa, jonka jälkeen piirtoalustaan piirretään joko risti tai nolla.
+     *   Lopuksi tarkistetaan loppuuko peli.
+     * @param x Piirtokohdan x-koordinaatti
+     * @param y Piirtokohdan Y-koordinaatti
+     * @param rivi Pelipöydän rivi johon vuoro pelataan
+     * @param sarake Pelipöydän sarake johon vuoro pelataan
+     */
     public void vuoro(int x, int y, int rivi, int sarake) {
         if (this.logiikka.getVuoro() == 1) {
             this.logiikka.suoritaVuoro(1, rivi, sarake);
@@ -64,7 +71,8 @@ public class PiirtoalustaKuuntelija implements MouseListener {
         }
     }
     
-    // Jos jompikumpi voittaa, asetetaan pelin tilaksi 0. Tasapelissä sille ei ole tarvetta, sillä ruudukko on jo täynnä.
+    /** Jos jompikumpi voittaa, asetetaan pelin tilaksi 0. Tasapelissä sille ei ole tarvetta, sillä ruudukko on jo täynnä.
+     */
     public void loppuukoPeli() {
         if (this.logiikka.tarkistaVoitto(1)) {
             this.tekstiKentta.setText("Risti on voittaja!");

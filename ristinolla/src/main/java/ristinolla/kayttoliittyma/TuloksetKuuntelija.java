@@ -19,6 +19,9 @@ public class TuloksetKuuntelija implements ActionListener {
         this.logiikka = logiikka;
     }
     
+    /** Luo uuden ikkunan tuloksille.
+     * @param e 
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         this.tulokset = new Tulokset(logiikka);

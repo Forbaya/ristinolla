@@ -16,10 +16,13 @@ public class Piirtoalusta extends JPanel {
         super.setBackground(Color.WHITE);
     }
     
+    /** Piirtää pelialustalle ristikon.
+     * @param g Grafiikka
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        // Piirtää pelialustalle ristikon.
+
         g.drawLine(0, 0, 0, 300);
         g.drawLine(0, 0, 300, 0);
         g.drawLine(100, 0, 100, 300);
@@ -30,7 +33,10 @@ public class Piirtoalusta extends JPanel {
         g.drawLine(0, 300, 300, 300);
     }
     
-    // Piirtää X haluttuun koordinaattiin piirtoalustassa.
+    /** Piirtää X haluttuun koordinaattiin piirtoalustassa.
+     * @param x Piirtokohdan x-koordinaatti
+     * @param y Piirtokohdan y-koordinaatti
+     */
     public void piirraRisti(int x, int y) {
         Graphics graphics = this.getGraphics();
         graphics.setColor(Color.BLUE);
@@ -38,7 +44,10 @@ public class Piirtoalusta extends JPanel {
         graphics.drawLine(x + 50, y, x, y + 50);
     }
     
-    // Piirtää O haluttuun koordinaattiin piirtoalustassa.
+    /** Piirtää O haluttuun koordinaattiin piirtoalustassa.
+     * @param x Piirtokohdan x-koordinaatti
+     * @param y Piirtokohdan y-koordinaatti
+     */
     public void piirraNolla(int x, int y) {
         Graphics graphics = this.getGraphics();
         graphics.setColor(Color.RED);
