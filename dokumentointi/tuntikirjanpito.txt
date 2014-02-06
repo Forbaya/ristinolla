@@ -32,5 +32,14 @@ Tuntikirjanpito:
 		- 2 sovelluslogiikan testin lis‰‰minen
 		~6h
 		
-	Kokonaistunnit yht. ~19h
+	6.2.2014
+		- Uutena ominaisuutena tulosten tarkasteleminen
+			- Tuloksille tehty oma ikkuna
+			- Voittojen laskija lis‰tty logiikkaan
+		- Luokkakaavion p‰ivitt‰minen
+		- Simppelit sekvenssikaaviot lis‰tty
+		- JavaDoc aloitettu
+		~4h
+		
+	Kokonaistunnit yht. ~23h
 	
