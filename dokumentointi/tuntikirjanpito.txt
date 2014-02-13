@@ -40,6 +40,12 @@ Tuntikirjanpito:
 		- Simppelit sekvenssikaaviot lisätty
 		- JavaDoc aloitettu
 		~4h
-		
-	Kokonaistunnit yht. ~23h
+	
+	13.2.2014
+		- Uutena ominaisuutena ristin ja nollan tyylien muuttaminen
+			- Käyttöliittymään lisätty Asetukset-nappi, joka avaa uuden ikkunan
+		- JavaDocin päivitys
+		~3h
+	
+	Kokonaistunnit yht. ~26h
 	
