@@ -24,6 +24,6 @@ public class TuloksetKuuntelija implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        this.tulokset = new Tulokset(logiikka);
+        this.tulokset = new Tulokset(this.logiikka);
     }
 }
