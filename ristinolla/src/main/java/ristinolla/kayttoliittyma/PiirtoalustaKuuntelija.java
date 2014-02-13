@@ -62,11 +62,21 @@ public class PiirtoalustaKuuntelija implements MouseListener {
     public void vuoro(int x, int y, int rivi, int sarake) {
         if (this.logiikka.getVuoro() == 1) {
             this.logiikka.suoritaVuoro(1, rivi, sarake);
-            this.piirtoalusta.piirraRisti(x, y);
+            if (this.logiikka.getRistinAsetus() == 1) {
+                this.piirtoalusta.piirraNormaaliRisti(x, y);
+            } else {
+                this.piirtoalusta.piirraLatinalainenRisti(x, y);
+            }
+            
             loppuukoPeli();
         } else {
             this.logiikka.suoritaVuoro(2, rivi, sarake);
-            this.piirtoalusta.piirraNolla(x, y);
+            if (this.logiikka.getNollanAsetus() == 1) {
+                this.piirtoalusta.piirraNormaaliNolla(x, y);
+            } else {
+                this.piirtoalusta.piirraHymynaama(x, y);
+            }
+            
             loppuukoPeli();
         }
     }
