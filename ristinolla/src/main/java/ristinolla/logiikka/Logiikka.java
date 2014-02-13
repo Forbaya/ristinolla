@@ -13,6 +13,8 @@ public class Logiikka {
     private Random random;
     private int vuoro;      // x = 1, o = 2.
     private VoittojenLaskija voittojenLaskija;
+    private int ristinAsetus; // Määrittää minkänäköinen kuvio ristin vuorolla piirretään.
+    private int nollanAsetus; // Määrittää minkänäköinen kuvio nollan vuorolla piirretään.
     
     public Logiikka() {
         this.poyta = new int[][] {
@@ -24,6 +26,8 @@ public class Logiikka {
         this.random = new Random();
         this.vuoro = 0;
         this.voittojenLaskija = new VoittojenLaskija();
+        this.ristinAsetus = 1;
+        this.nollanAsetus = 1;
     }
     
     public int getPelinTila() {
@@ -42,10 +46,26 @@ public class Logiikka {
         return this.vuoro;
     }
     
+    public int getRistinAsetus() {
+        return this.ristinAsetus;
+    }
+    
+    public int getNollanAsetus() {
+        return this.nollanAsetus;
+    }
+    
     public void setPelinTila(int x) {
         if (x == 0 || x == 1) {
             this.pelinTila = x; 
         }
+    }
+    
+    public void setRistinAsetus(int uusiAsetus) {
+        this.ristinAsetus = uusiAsetus;
+    }
+    
+    public void setNollanAsetus(int uusiAsetus) {
+        this.nollanAsetus = uusiAsetus;
     }
     
     /** Käynnistää uuden pelin nollaamalla ensin taulun, jonka jälkeen arvotaan aloittaja. Lopuksi pelin tila vaihdetaan 1.
