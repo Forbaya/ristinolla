@@ -38,7 +38,7 @@ public class Tulokset extends JFrame {
     /** Luo tulos-ikkunan komponentit ja lisää ne containeriin.
      * @param container 
      */
-    public void luoKomponentit(Container container) {
+    private void luoKomponentit(Container container) {
         container.setLayout(new GridLayout(3, 1));
         
         JTextField tekstiKentta = new JTextField("Risti " + voittojenLaskija.getRistinVoitot() + " - " + voittojenLaskija.getNollanVoitot() + " Nolla");
