@@ -17,6 +17,9 @@ import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import ristinolla.logiikka.Logiikka;
 
+/** Ikkuna asetuksien muuttamiseen. 
+ */
+
 public class Asetukset extends JFrame {
     private JFrame frame;
     private Logiikka logiikka;
@@ -31,6 +34,9 @@ public class Asetukset extends JFrame {
         this.frame.setVisible(true);
     }
     
+    /** Luo ikkunan komponentit, tekee niille kuuntelijat ja lisää ne containeriin.
+     * @param container Container, johon komponentit lisätään.
+     */
     private void luoKomponentit(Container container) {
         container.setLayout(new GridLayout(7, 1));
         
@@ -64,6 +70,13 @@ public class Asetukset extends JFrame {
         container.add(sulje);
     }
     
+    /** Tekee komponenteille kuuntelijat.
+     * @param risti1 Ensimmäinen asetus ristille.
+     * @param risti2 Toinen asetus ristille.
+     * @param nolla1 Ensimmäinen asetus nollalle.
+     * @param nolla2 Toinen asetus nollalle.
+     * @param sulje Nappi ikkunan sulkemiselle.
+     */
     private void teeKuuntelijat(JRadioButton risti1, JRadioButton risti2, JRadioButton nolla1, JRadioButton nolla2, JButton sulje) {
         risti1.addActionListener(new ActionListener() {
             @Override

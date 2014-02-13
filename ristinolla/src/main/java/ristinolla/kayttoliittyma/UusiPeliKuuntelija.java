@@ -11,6 +11,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 import ristinolla.logiikka.Logiikka;
 
+/** ActionListener käyttöliittymän Uusi peli -napille.
+ */
+
 public class UusiPeliKuuntelija implements ActionListener {
     private Logiikka logiikka;
     private JTextField tekstiKentta;

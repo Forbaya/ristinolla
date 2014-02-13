@@ -7,6 +7,9 @@ package ristinolla.logiikka;
 
 import java.util.ArrayList;
 
+/** Tallentaa suorituksen ajaksi tilastot voitoista.
+ */
+
 public class VoittojenLaskija {
     private ArrayList<Integer> voitot;
     private int ristinVoitot;
@@ -31,7 +34,7 @@ public class VoittojenLaskija {
     }
     
     /** Lisää voiton ristille tai nollalle
-     * @param kumpi Risti tai nolla 
+     * @param kumpi Risti (1) tai nolla (2)
      */
     public void lisaaVoitto(int kumpi) {
         if (kumpi == 1) {

@@ -10,6 +10,9 @@ import java.awt.event.ActionListener;
 import ristinolla.logiikka.Logiikka;
 import ristinolla.logiikka.VoittojenLaskija;
 
+/** ActionListener käyttöliittymän Tulokset-napille.
+ */
+
 public class TuloksetKuuntelija implements ActionListener {
     private Logiikka logiikka;
     private VoittojenLaskija voittojenLaskija;

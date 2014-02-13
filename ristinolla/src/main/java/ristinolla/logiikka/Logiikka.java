@@ -7,6 +7,9 @@ package ristinolla.logiikka;
 
 import java.util.Random;
 
+/** Pelin sovelluslogiikka. Käyttöliittymän toiminnot käyttävät tätä toimiakseen.
+ */
+
 public class Logiikka {
     private int poyta[][];
     private int pelinTila;  // Peli on käynnissä kun tila on 1, poissa kun tila on 0.

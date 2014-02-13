@@ -9,6 +9,9 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
+/** Alue mihin peliä pelataan. Piirtää luodessa ruudukun, ja pelattaessa ristit ja nollat.
+ */
+
 public class Piirtoalusta extends JPanel {
     private Graphics g;
     

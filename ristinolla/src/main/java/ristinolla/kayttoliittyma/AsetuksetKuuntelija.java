@@ -9,6 +9,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import ristinolla.logiikka.Logiikka;
 
+/** ActionListener käyttöliittymän Asetukset-napille.
+ */
+
 public class AsetuksetKuuntelija implements ActionListener {
     private Logiikka logiikka;
     private Asetukset asetukset;
@@ -24,5 +27,4 @@ public class AsetuksetKuuntelija implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         this.asetukset = new Asetukset(this.logiikka);
     }
-    
 }

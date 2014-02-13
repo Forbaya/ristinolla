@@ -17,6 +17,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import ristinolla.logiikka.*;
 
+/** Ikkuna tulosten tarkastelemiseen.
+ */
+
 public class Tulokset extends JFrame {
     private JFrame frame;
     private VoittojenLaskija voittojenLaskija;

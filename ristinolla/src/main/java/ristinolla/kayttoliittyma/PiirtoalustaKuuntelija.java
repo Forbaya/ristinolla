@@ -10,6 +10,9 @@ import java.awt.event.MouseListener;
 import javax.swing.JTextField;
 import ristinolla.logiikka.Logiikka;
 
+/** MouseListener piirtoalustalle.
+ */
+
 public class PiirtoalustaKuuntelija implements MouseListener {
     private Logiikka logiikka;
     private Piirtoalusta piirtoalusta;
