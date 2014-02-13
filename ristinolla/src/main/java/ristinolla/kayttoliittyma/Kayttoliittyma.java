@@ -59,14 +59,16 @@ public class Kayttoliittyma implements Runnable {
      * @return Palauttaa panelin
      */
     public JPanel luoMenu(JTextField tekstiKentta, Piirtoalusta piirtoalusta) {
-        JPanel panel = new JPanel(new GridLayout(4, 1));
+        JPanel panel = new JPanel(new GridLayout(5, 1));
         
         JButton uusiPeli = new JButton("Uusi peli");
         JButton tulokset = new JButton("Tulokset");
+        JButton asetukset = new JButton("Asetukset");
         JButton lopeta = new JButton("Lopeta");
         
         uusiPeli.addActionListener(new UusiPeliKuuntelija(this.logiikka, tekstiKentta, piirtoalusta));
         tulokset.addActionListener(new TuloksetKuuntelija(this.logiikka));
+        asetukset.addActionListener(new AsetuksetKuuntelija(this.logiikka));
         lopeta.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -77,6 +79,7 @@ public class Kayttoliittyma implements Runnable {
         panel.add(tekstiKentta);
         panel.add(uusiPeli);
         panel.add(tulokset);
+        panel.add(asetukset);
         panel.add(lopeta);
         
         return panel;
