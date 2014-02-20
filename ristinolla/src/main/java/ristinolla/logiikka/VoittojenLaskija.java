@@ -46,4 +46,10 @@ public class VoittojenLaskija {
             this.nollanVoitot++;
         }
     }
+    
+    /** Lisää tasapelin.
+     */
+    public void lisaaTasapeli() {
+        this.voitot.add(0);
+    }
 }

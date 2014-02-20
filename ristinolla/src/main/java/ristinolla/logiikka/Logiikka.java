@@ -197,7 +197,11 @@ public class Logiikka {
                 }
             }
         }
-        return ristitJaNollat == 9;
+        if (ristitJaNollat == 9) {
+            voittojenLaskija.lisaaTasapeli();
+            return true;
+        }
+        return false;
     }
     
     /* Tulostaa pöydän. Tämä metodi on testaustarkoituksiin.

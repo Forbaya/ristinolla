@@ -55,7 +55,9 @@ public class Tulokset extends JFrame {
         
         ArrayList<Integer> voitot = voittojenLaskija.getVoitot();
         for (int i = 0; i < voitot.size(); i++) {
-            if (voitot.get(i) == 1) {
+            if (voitot.get(i) == 0) {
+                aikaisemmatPelit += "Tasapeli\n";
+            } else if (voitot.get(i) == 1) {
                 aikaisemmatPelit += "Risti voitti\n";
             } else {
                 aikaisemmatPelit += "Nolla voitti\n";
