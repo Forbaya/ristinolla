@@ -7,45 +7,52 @@ Tuntikirjanpito:
 		
 
 	17.1.2014
-		- Sovelluslogiikan lisääminen
+		- Sovelluslogiikan lisääminen.
 		~4.5h
 
 	18.1.2014
-		- 18 Sovelluslogiikan testin tekeminen
+		- 18 Sovelluslogiikan testin tekeminen.
 		~1.5h
 		
 	20.1.2014
-		- Käyttöliittymän aloittaminen
+		- Käyttöliittymän aloittaminen.
 		~0.5h
 
 	21.1.2014
-		- Piirtoalustan luominen
-		- Käyttöliittymän päivittäminen
+		- Piirtoalustan luominen.
+		- Käyttöliittymän päivittäminen.
 		~3.5h
 		
 	28.1.2014
-		- Käyttöliittymään suuri päivitys
-		- Piirtoalustaan suuri päivitys
+		- Käyttöliittymään suuri päivitys.
+		- Piirtoalustaan suuri päivitys.
 		- Kuuntelijat tehty Piirtoalustalle ja Uusi peli -napille.
-		- Sovelluslogiikan rikkinäiset tarkistaRivit- ja tarkistaSarakkeet-metodit korjattu
-		- Peli on tällä hetkellä pelattava
-		- 2 sovelluslogiikan testin lisääminen
+		- Sovelluslogiikan rikkinäiset tarkistaRivit- ja tarkistaSarakkeet-metodit korjattu.
+		- Peli on tällä hetkellä pelattava.
+		- 2 sovelluslogiikan testin lisääminen.
 		~6h
 		
 	6.2.2014
-		- Uutena ominaisuutena tulosten tarkasteleminen
-			- Tuloksille tehty oma ikkuna
-			- Voittojen laskija lisätty logiikkaan
-		- Luokkakaavion päivittäminen
-		- Simppelit sekvenssikaaviot lisätty
-		- JavaDoc aloitettu
+		- Uutena ominaisuutena tulosten tarkasteleminen.
+			- Tuloksille tehty oma ikkuna.
+			- Voittojen laskija lisätty logiikkaan.
+		- Luokkakaavion päivittäminen.
+		- Simppelit sekvenssikaaviot lisätty.
+		- JavaDoc aloitettu.
 		~4h
 	
 	13.2.2014
-		- Uutena ominaisuutena ristin ja nollan tyylien muuttaminen
-			- Käyttöliittymään lisätty Asetukset-nappi, joka avaa uuden ikkunan
-		- JavaDocin päivitys
+		- Uutena ominaisuutena ristin ja nollan tyylien muuttaminen.
+			- Käyttöliittymään lisätty Asetukset-nappi, joka avaa uuden ikkunan.
+		- JavaDocin päivitys.
 		~3h
+		
+	20.2.2014
+		- Tulokset näyttää nyt myös tasapelit.
+		- Yritys saada tulokset tiedostoon. Epäonnistuminen.
+		- Uusi sekvenssikaavio.
+		- Testien korjaus ja lisäys.
+		~4h
 	
-	Kokonaistunnit yht. ~26h
+	Kokonaistunnit yht. ~30h
 	
