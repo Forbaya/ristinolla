@@ -12,13 +12,17 @@ import ristinolla.logiikka.Logiikka;
 
 /** MouseListener piirtoalustalle.
  */
-
 public class PiirtoalustaKuuntelija implements MouseListener {
     private Logiikka logiikka;
     private Piirtoalusta piirtoalusta;
     private int[][] poyta;
     private JTextField tekstiKentta;
     
+    /** Alustaa oliomuuttujat.
+     * @param logiikka Pelin logiikka
+     * @param piirtoalusta Piirtoalusta, johon ristit ja nollat piirretään
+     * @param tekstiKentta Tekstikenttä
+     */
     public PiirtoalustaKuuntelija(Logiikka logiikka, Piirtoalusta piirtoalusta, JTextField tekstiKentta) {
         this.logiikka = logiikka;
         this.piirtoalusta = piirtoalusta;

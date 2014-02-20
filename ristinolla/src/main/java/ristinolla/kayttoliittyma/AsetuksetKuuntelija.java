@@ -11,11 +11,13 @@ import ristinolla.logiikka.Logiikka;
 
 /** ActionListener käyttöliittymän Asetukset-napille.
  */
-
 public class AsetuksetKuuntelija implements ActionListener {
     private Logiikka logiikka;
-    private Asetukset asetukset;
+
     
+    /** Alustaa logiikka-muuttujan.
+     * @param logiikka 
+     */
     public AsetuksetKuuntelija(Logiikka logiikka) {
         this.logiikka = logiikka;
     }
@@ -25,6 +27,6 @@ public class AsetuksetKuuntelija implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        this.asetukset = new Asetukset(this.logiikka);
+        Asetukset asetukset = new Asetukset(this.logiikka);
     }
 }

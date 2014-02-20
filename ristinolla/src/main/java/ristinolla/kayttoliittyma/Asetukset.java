@@ -19,11 +19,13 @@ import ristinolla.logiikka.Logiikka;
 
 /** Ikkuna asetuksien muuttamiseen. 
  */
-
 public class Asetukset extends JFrame {
     private JFrame frame;
     private Logiikka logiikka;
     
+    /** Alustaa oliomuuttujat ja tekee uuden ikkunan asetuksille.
+     * @param logiikka Pelin logiikka
+     */
     public Asetukset(Logiikka logiikka) {
         this.logiikka = logiikka;
         this.frame = new JFrame("Asetukset");

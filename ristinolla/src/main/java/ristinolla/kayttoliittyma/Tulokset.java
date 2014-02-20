@@ -19,11 +19,13 @@ import ristinolla.logiikka.*;
 
 /** Ikkuna tulosten tarkastelemiseen.
  */
-
 public class Tulokset extends JFrame {
     private JFrame frame;
     private VoittojenLaskija voittojenLaskija;
     
+    /** Alustaa oliomuuttujat ja avaa uuden ikkunan tuloksille.
+     * @param logiikka Pelin logiikka
+     */
     public Tulokset(Logiikka logiikka) {
         this.voittojenLaskija = logiikka.getVoittojenLaskija();
         this.frame = new JFrame("Tulokset");

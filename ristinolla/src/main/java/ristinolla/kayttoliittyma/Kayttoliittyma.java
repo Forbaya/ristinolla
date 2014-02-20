@@ -20,11 +20,12 @@ import ristinolla.logiikka.Logiikka;
 /** Sovelluksen pääikkuna. Käyttöliittymä koostuu kahdesta osasta: piirtoalustasta ja menusta.
  *  Menuun kuuluu tekstikenttä ja painikkeet.
  */
-
 public class Kayttoliittyma implements Runnable {
     private JFrame frame;
     private Logiikka logiikka;
     
+    /** Alustaa logiikka-muuttujan.
+     */
     public Kayttoliittyma() {
         this.logiikka = new Logiikka();
     }

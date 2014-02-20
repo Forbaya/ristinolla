@@ -9,12 +9,13 @@ import java.util.ArrayList;
 
 /** Tallentaa suorituksen ajaksi tilastot voitoista.
  */
-
 public class VoittojenLaskija {
     private ArrayList<Integer> voitot;
     private int ristinVoitot;
     private int nollanVoitot;
     
+    /** Luo ArrayListin voitoille, sekä alustaa ristin ja nollan voitot.
+     */
     public VoittojenLaskija() {
         this.voitot = new ArrayList<>();
         this.ristinVoitot = 0;

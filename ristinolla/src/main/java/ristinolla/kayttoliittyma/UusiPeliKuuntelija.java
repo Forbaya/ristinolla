@@ -13,13 +13,17 @@ import ristinolla.logiikka.Logiikka;
 
 /** ActionListener käyttöliittymän Uusi peli -napille.
  */
-
 public class UusiPeliKuuntelija implements ActionListener {
     private Logiikka logiikka;
     private JTextField tekstiKentta;
     private Piirtoalusta piirtoalusta;
     private Graphics graphics;
     
+    /** Alustaa oliomuuttujat.
+     * @param logiikka Pelin logiikka
+     * @param tekstiKentta Tekstikenttä
+     * @param piirtoalusta Piirtoalusta, johon ristit ja nollat piirretään.
+     */
     public UusiPeliKuuntelija(Logiikka logiikka, JTextField tekstiKentta, Piirtoalusta piirtoalusta) {
         this.logiikka = logiikka;
         this.tekstiKentta = tekstiKentta;

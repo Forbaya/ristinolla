@@ -11,10 +11,10 @@ import javax.swing.JPanel;
 
 /** Alue mihin peliä pelataan. Piirtää luodessa ruudukun, ja pelattaessa ristit ja nollat.
  */
-
 public class Piirtoalusta extends JPanel {
-    private Graphics g;
     
+    /** Asettaa alustan taustan väriksi valkoisen.
+     */
     public Piirtoalusta() {
         super.setBackground(Color.WHITE);
     }

@@ -9,7 +9,6 @@ import java.util.Random;
 
 /** Pelin sovelluslogiikka. Käyttöliittymän toiminnot käyttävät tätä toimiakseen.
  */
-
 public class Logiikka {
     private int poyta[][];
     private int pelinTila;  // Peli on käynnissä kun tila on 1, poissa kun tila on 0.
@@ -19,6 +18,8 @@ public class Logiikka {
     private int ristinAsetus; // Määrittää minkänäköinen kuvio ristin vuorolla piirretään.
     private int nollanAsetus; // Määrittää minkänäköinen kuvio nollan vuorolla piirretään.
     
+    /** Alustaa tyhjän pelipöydän ja muut muuttujat, sekä luo voittojen laskijan..
+     */
     public Logiikka() {
         this.poyta = new int[][] {
             {0, 0, 0},
