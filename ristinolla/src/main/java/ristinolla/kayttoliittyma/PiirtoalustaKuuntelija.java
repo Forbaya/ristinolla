@@ -38,7 +38,7 @@ public class PiirtoalustaKuuntelija implements MouseListener {
     public void mouseClicked(MouseEvent e) {
         if (this.logiikka.getPelinTila() == 1) {
             if (e.getX() > 0 && e.getX() < 100 && e.getY() > 0 && e.getY() < 100 && this.poyta[0][0] == 0) {
-                this.vuoro(25, 25, 0, 0);
+                vuoro(25, 25, 0, 0);
             } else if (e.getX() > 100 && e.getX() < 200 && e.getY() > 0 && e.getY() < 100 && poyta[0][1] == 0) {
                 vuoro(125, 25, 0, 1);
             } else if (e.getX() > 100 && e.getX() < 300 && e.getY() > 0 && e.getY() < 100 && poyta[0][2] == 0) {
