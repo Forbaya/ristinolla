@@ -1,0 +1,19 @@
+Ristinolla on kahden pelaajan vuoropohjainen peli, jossa on tarkoituksena saada
+3x3 kokoisen ruudukon pysty- vaaka- tai viistoriville kolme omaa merkkiä. 
+Pelaajat päättävät itse kumpi pelaa ristillä ja kumpi nollalla.
+
+Pelin käyttöliittymä koostuu vasemmalla puolella olevasta piirtoalustasta, ja oikealla
+puolella sijaitsevasta menusta. Ennen kuin ruudukkoon voi piirtää mitään, täytyy aloittaa
+uusi peli menusta löytyvästä painikkeesta. Kun uusi peli -nappia on painettu, yläoikealla
+oleva tekstikenttä kertoo kumpi pelaaja aloittaa. Tekstikenttä ilmoittaa myös voitoista
+ja tasapeleistä.
+
+Tuloksia voi tarkastella painamalla tulokset-nappia. Tulokset avautuvat omalle ikkunalle.
+Ikkuna koostuu neljästä osasta. Ylimpänä näkyy ristin ja nollan voitot. Sen alla näkyy
+viimeisimmät pelit. Alimpana on napit tulosten nollaamiselle ja ikkunan sulkemiselle.
+Ikkunan voi toki myös sulkea painamalla oikeassa yläkulmassa olevaa ruksia.
+Ohjelma muistaa tulokset vaikka pelin sulkisi.
+
+Käyttöliittymän asetukset-napilla pääsee säätämään ristin ja nollan kuvioita. Risti
+voi valita tavallisen ristin tai latinalaisen ristin. Nolla taas voi valita tavallisen nollan
+tai hymynaaman.
