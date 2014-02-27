@@ -10,7 +10,7 @@ ja tasapeleistä.
 
 Tuloksia voi tarkastella painamalla tulokset-nappia. Tulokset avautuvat omalle ikkunalle.
 Ikkuna koostuu neljästä osasta. Ylimpänä näkyy ristin ja nollan voitot. Sen alla näkyy
-viimeisimmät pelit. Alimpana on napit tulosten nollaamiselle ja ikkunan sulkemiselle.
+viimeisimmät pelit, alimpana uusin peli. Alimpana on napit tulosten nollaamiselle ja ikkunan sulkemiselle.
 Ikkunan voi toki myös sulkea painamalla oikeassa yläkulmassa olevaa ruksia.
 Ohjelma muistaa tulokset vaikka pelin sulkisi.
 
