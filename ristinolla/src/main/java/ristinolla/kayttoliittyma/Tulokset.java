@@ -14,6 +14,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import ristinolla.logiikka.*;
@@ -46,10 +48,11 @@ public class Tulokset extends JFrame {
      * @param container Container, johon komponentit asetetaan.
      */
     private void luoKomponentit(Container container) throws Exception {
-        container.setLayout(new GridLayout(4, 1));
+        container.setLayout(new GridLayout(3, 1));
         
         final JTextField tekstiKentta = new JTextField("Risti " + tiedostonKasittelija.lueRistinPisteet() + " - " + tiedostonKasittelija.lueNollanPisteet() + " Nolla");
         final JTextArea tekstiAlue = new JTextArea();
+        final JScrollPane scrollattava = new JScrollPane(tekstiAlue);
         
         tekstiKentta.setEditable(false);
         tekstiAlue.setEditable(false);
@@ -62,6 +65,18 @@ public class Tulokset extends JFrame {
         }
         tekstiAlue.setText(aikaisemmatPelit);
         
+        container.add(tekstiKentta);
+        container.add(scrollattava);
+        container.add(luoNapit(tekstiKentta, tekstiAlue));
+    }
+    
+    /** Luo napit tulos ikkunan napit. Napit on 1 rivin ja 2 sarakkeen GridLayoutissa.
+     * @param tekstiKentta Tekstikenttä, jota nollaa-napin kuuntelija tarvitsee.
+     * @param tekstiAlue Tekstialue, jota nollaa-napin kuuntelija tarvitsee.
+     * @return Palauttaa panelin, joka lisätään luoKomponentit-metodissa containeriin.
+     */
+    private JPanel luoNapit(JTextField tekstiKentta, JTextArea tekstiAlue) {
+        JPanel panel = new JPanel(new GridLayout(1,2));
         JButton nollaa = new JButton("Nollaa");
         luoNollaaKuuntelija(nollaa, tekstiKentta, tekstiAlue);
         
@@ -73,11 +88,10 @@ public class Tulokset extends JFrame {
             } 
         });
         
+        panel.add(nollaa);
+        panel.add(sulje);
         
-        container.add(tekstiKentta);
-        container.add(tekstiAlue);
-        container.add(nollaa);
-        container.add(sulje);
+        return panel;
     }
     
     /** Luo kuuntelijan nollaa-napille. Ristin ja nollan pisteet nollataan ja viimeksi pelatut pelit poistetaan.
