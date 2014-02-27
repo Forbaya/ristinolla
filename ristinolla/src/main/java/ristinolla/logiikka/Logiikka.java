@@ -11,10 +11,9 @@ import java.util.logging.Logger;
  * Pelin sovelluslogiikka. Käyttöliittymän toiminnot käyttävät tätä toimiakseen.
  */
 public class Logiikka {
-
     private int poyta[][];
     private int pelinTila;  // Peli on käynnissä kun tila on 1, poissa kun tila on 0.
-    private Random random;
+    private Random random;  // Tämän avulla päätetään kumpi aloittaa.
     private int vuoro;      // x = 1, o = 2.
     private TiedostonKasittelija tiedostonKasittelija;
     private int ristinAsetus; // Määrittää minkänäköinen kuvio ristin vuorolla piirretään.
@@ -25,7 +24,7 @@ public class Logiikka {
      * laskijan..
      */
     public Logiikka() {
-        this.poyta = new int[][]{
+        this.poyta = new int[][] {
             {0, 0, 0},
             {0, 0, 0},
             {0, 0, 0}

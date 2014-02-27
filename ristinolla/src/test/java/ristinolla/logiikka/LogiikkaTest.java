@@ -32,7 +32,6 @@ public class LogiikkaTest {
         assertEquals(0, logiikka.getVuoro());
         assertEquals(1, logiikka.getRistinAsetus());
         assertEquals(1, logiikka.getNollanAsetus());
-        assertTrue(logiikka.getVoittojenLaskija() != null);
     }
     
     // Testaa setPelinTila-metodin.

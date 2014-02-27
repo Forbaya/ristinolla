@@ -18,7 +18,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import ristinolla.logiikka.*;
 
-/** Ikkuna tulosten tarkastelemiseen.
+/** Ikkuna tulosten tarkastelemiseen, sekä nollaamiseen.
  */
 public class Tulokset extends JFrame {
     private JFrame frame;
@@ -42,7 +42,7 @@ public class Tulokset extends JFrame {
         this.frame.setVisible(true);
     }
     
-    /** Luo tulos-ikkunan komponentit ja lisää ne containeriin.
+    /** Luo tulos-ikkunan komponentit, niiden kuuntelijat ja lisää ne containeriin.
      * @param container Container, johon komponentit asetetaan.
      */
     private void luoKomponentit(Container container) throws Exception {
@@ -63,30 +63,7 @@ public class Tulokset extends JFrame {
         tekstiAlue.setText(aikaisemmatPelit);
         
         JButton nollaa = new JButton("Nollaa");
-        nollaa.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    tiedostonKasittelija.kirjoitaPisteisiin("0:0");
-                } catch (Exception ex) {
-                    Logger.getLogger(Tulokset.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                
-                try {
-                    tiedostonKasittelija.nollaaViimeisetVoitot();
-                } catch (Exception ex) {
-                    Logger.getLogger(Tulokset.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                
-                try {
-                    tekstiKentta.setText("Risti " + tiedostonKasittelija.lueRistinPisteet() + " - " + tiedostonKasittelija.lueNollanPisteet() + " Nolla");
-                } catch (Exception ex) {
-                    Logger.getLogger(Tulokset.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                
-                tekstiAlue.setText("");
-            }
-        });
+        luoNollaaKuuntelija(nollaa, tekstiKentta, tekstiAlue);
         
         JButton sulje = new JButton("Sulje");
         sulje.addActionListener(new ActionListener() {
@@ -101,5 +78,27 @@ public class Tulokset extends JFrame {
         container.add(tekstiAlue);
         container.add(nollaa);
         container.add(sulje);
+    }
+    
+    /** Luo kuuntelijan nollaa-napille. Ristin ja nollan pisteet nollataan ja viimeksi pelatut pelit poistetaan.
+     * @param nollaa Painike, jolle kuuntelija tehdään.
+     * @param tekstiKentta Tekstikenttä, jossa näkyy ristin ja nollan pisteet.
+     * @param tekstiAlue Tekstialue, jossa näkyy viime pelien voitot.
+     */
+    private void luoNollaaKuuntelija(JButton nollaa, final JTextField tekstiKentta, final JTextArea tekstiAlue) {
+        nollaa.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    tiedostonKasittelija.kirjoitaPisteisiin("0:0");
+                    tiedostonKasittelija.nollaaViimeisetVoitot();
+                    tekstiKentta.setText("Risti " + tiedostonKasittelija.lueRistinPisteet() + " - " + tiedostonKasittelija.lueNollanPisteet() + " Nolla");
+                } catch (Exception ex) {
+                    Logger.getLogger(Tulokset.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                tekstiAlue.setText("");
+            }
+        });
     }
 }
