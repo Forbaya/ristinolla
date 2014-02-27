@@ -22,6 +22,7 @@ import ristinolla.logiikka.*;
 public class Tulokset extends JFrame {
     private JFrame frame;
     private VoittojenLaskija voittojenLaskija;
+
     
     /** Alustaa oliomuuttujat ja avaa uuden ikkunan tuloksille.
      * @param logiikka Pelin logiikka
@@ -41,7 +42,7 @@ public class Tulokset extends JFrame {
     }
     
     /** Luo tulos-ikkunan komponentit ja lisää ne containeriin.
-     * @param container 
+     * @param container Container, johon komponentit asetetaan.
      */
     private void luoKomponentit(Container container) {
         container.setLayout(new GridLayout(3, 1));

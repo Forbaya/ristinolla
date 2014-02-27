@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import ristinolla.logiikka.Logiikka;
+import ristinolla.logiikka.TiedostonKasittelija;
 
 /** Sovelluksen pääikkuna. Käyttöliittymä koostuu kahdesta osasta: piirtoalustasta ja menusta.
  *  Menuun kuuluu tekstikenttä ja painikkeet.
@@ -23,11 +24,13 @@ import ristinolla.logiikka.Logiikka;
 public class Kayttoliittyma implements Runnable {
     private JFrame frame;
     private Logiikka logiikka;
+    private TiedostonKasittelija tiedostonKasittelija;
     
     /** Alustaa logiikka-muuttujan.
      */
     public Kayttoliittyma() {
         this.logiikka = new Logiikka();
+        this.tiedostonKasittelija = new TiedostonKasittelija("pisteet.txt", "viimeisimmatVoitot.txt");
     }
     
     @Override
