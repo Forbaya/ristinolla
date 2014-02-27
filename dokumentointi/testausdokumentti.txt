@@ -1,0 +1,3 @@
+Tiedetyt bugit:
+	- Tuplaklikkaamalla ruutuja (0, 1), (0, 2) ja (1, 2) ohjelma piirtää seuraavan pelaajan merkin toiseen ruutuun.
+      En löytänyt ongelmaan ratkaisua. :(
